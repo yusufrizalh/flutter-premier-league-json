@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
     return (MaterialApp(
       title: 'Premier League Teams',
       theme: ThemeData(primarySwatch: Colors.cyan),
+      debugShowCheckedModeBanner: false,
       home: MyHomePage(),
     ));
   }

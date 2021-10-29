@@ -1,6 +1,7 @@
 // ignore_for_file: must_be_immutable, prefer_const_constructors_in_immutables, unnecessary_null_comparison, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:flutter_json_gmaps/teamdetails.dart';
 import 'package:flutter_json_gmaps/teams.dart';
 
 class TeamList extends StatelessWidget {
@@ -16,6 +17,10 @@ class TeamList extends StatelessWidget {
           child: InkWell(
             onTap: () {
               // membuka detail dari suatu team
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => TeamDetails(teams[index])));
             },
             child: Row(
               children: <Widget>[

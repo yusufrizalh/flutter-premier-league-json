@@ -3,6 +3,11 @@
    <application
         android:label="flutter_json_gmaps"
         android:icon="@mipmap/ic_launcher">
+
+        <meta-data 
+          android:name="com.google.android.geo.API_KEY"
+          android:value="AIzaSyDLjBnHt0_RnDnnj9hz7yB-NJLhj4MKH7M" />
+
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
